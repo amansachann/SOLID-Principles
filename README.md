@@ -24,7 +24,7 @@
 ## 🧩 Visual Summary
 
 ```plaintext
-S — Single Responsibility      → One class, one job
+S — Single Responsibility     → One class, one job
 O — Open/Closed               → Extend, don’t modify
 L — Liskov Substitution       → Subclasses must behave properly
 I — Interface Segregation     → Prefer small, specific interfaces
