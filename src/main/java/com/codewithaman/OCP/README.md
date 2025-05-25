@@ -1,3 +1,5 @@
+# 🧩 Open-Closed Principle
+
 ---
 
 ### ✅ **Definition**
