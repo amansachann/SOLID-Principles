@@ -1,6 +1,10 @@
 package com.codewithaman;
 
 //import com.codewithaman.OCP.BadCode.Invoice;
+//import com.codewithaman.LSP.Badcode.Bird;
+//import com.codewithaman.LSP.Badcode.Ostrich;
+//import com.codewithaman.LSP.Badcode.Sparrow;
+import com.codewithaman.LSP.Goodcode.*;
 import com.codewithaman.OCP.GoodCode.*;
 //import com.codewithaman.SRP.BadCode.UserManager;
 import com.codewithaman.SRP.GoodCode.UserManager;
@@ -14,10 +18,24 @@ public class Main {
 //        userManager.registerUser("amansachann", "amansachan@gmail.com");
 
 //        Open Closed Principle (OCP)
-        DiscountStrategy discountStrategy = new SilverDiscount();
-        Invoice invoice = new Invoice(discountStrategy);
-        System.out.println("Dicount provided: " + (int)(invoice.calculateDiscount()*100) + "%");
+//        DiscountStrategy discountStrategy = new SilverDiscount();
+//        Invoice invoice = new Invoice(discountStrategy);
+//        System.out.println("Dicount provided: " + (int)(invoice.calculateDiscount()*100) + "%");
 
-        //Dependency Inversion Principle (DIP)
+//        Liskov Substitution Principle
+//        Bad Code
+//        Bird sparrow = new Sparrow();
+//        sparrow.eat();
+//        sparrow.fly();
+//        Bird ostrich = new Ostrich();
+//        ostrich.eat();
+//        ostrich.fly();
+
+//        Good Code
+        FlyingBird sparrow = new Sparrow();
+        sparrow.eat();
+        sparrow.fly();
+        Bird ostrich = new Ostrich();
+        ostrich.eat();
     }
 }

@@ -36,13 +36,13 @@ D — Dependency Inversion      → Depend on abstractions, not concretes
 
 ## 📚 Detailed Explanations of each SOLID Principle
 
-| Principle | Detailed Explanation                                                           |
-| --------- |--------------------------------------------------------------------------------|
-| **S**     | [Single Responsibility Principle (SRP)](./src/main/java/com/codewithaman/SRP)  |
-| **O**     | [Open-Closed Principle (OCP)](./src/main/java/com/codewithaman/OCP)            |
-| **L**     | Subclass `PDFExporter` should not break base `Exporter`                        |
-| **I**     | Split `Exporter` interface into `TextExporter`, `ImageExporter`                |
-| **D**     | `Editor` depends on an `Exporter` interface, not `PdfExporter` directly        |
+| Principle | Detailed Explanation                                                          |
+| --------- |-------------------------------------------------------------------------------|
+| **S**     | [Single Responsibility Principle (SRP)](./src/main/java/com/codewithaman/SRP) |
+| **O**     | [Open-Closed Principle (OCP)](./src/main/java/com/codewithaman/OCP)           |
+| **L**     | [Liskov Substitution Principle (LSP)](./src/main/java/com/codewithaman/LSP)   |
+| **I**     | Split `Exporter` interface into `TextExporter`, `ImageExporter`               |
+| **D**     | `Editor` depends on an `Exporter` interface, not `PdfExporter` directly       |
 
 ---
 ## 📘 Example Overview
