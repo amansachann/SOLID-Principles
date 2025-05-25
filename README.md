@@ -33,15 +33,26 @@ D — Dependency Inversion      → Depend on abstractions, not concretes
 
 ---
 
+
+## 📚 Detailed Explanations of each SOLID Principle
+
+| Principle | Detailed Explanation                                                                 |
+| --------- |--------------------------------------------------------------------------------------|
+| **S**     | [Single Responsibility Principle (SRP)](./src/main/java/com/codewithaman/SRP/SRP.md) |
+| **O**     | [Open-Closed Principle (OCP)](./src/main/java/com/codewithaman/OCP/OCP.md)           |
+| **L**     | Subclass `PDFExporter` should not break base `Exporter`                              |
+| **I**     | Split `Exporter` interface into `TextExporter`, `ImageExporter`                      |
+| **D**     | `Editor` depends on an `Exporter` interface, not `PdfExporter` directly              |
+
+---
 ## 📘 Example Overview
 
 Imagine you're building a **document editor**:
 
-| Principle | Applied Example                                                             |
-| --------- | --------------------------------------------------------------------------- |
-| **S**     | Split `DocumentManager` into `TextFormatter`, `Printer`, and `Saver`        |
+| Principle | Applied Example                                                        |
+| --------- |------------------------------------------------------------------------|
+| **S**     | Split `DocumentManager` into `TextFormatter`, `Printer`, and `Saver`   |
 | **O**     | Add new file exporters (PDF, DOCX) without changing existing exporter logic |
-| **L**     | Subclass `PDFExporter` should not break base `Exporter`                     |
-| **I**     | Split `Exporter` interface into `TextExporter`, `ImageExporter`             |
-| **D**     | `Editor` depends on an `Exporter` interface, not `PdfExporter` directly     |
-
+| **L**     | Subclass `PDFExporter` should not break base `Exporter`                |
+| **I**     | Split `Exporter` interface into `TextExporter`, `ImageExporter`        |
+| **D**     | `Editor` depends on an `Exporter` interface, not `PdfExporter` directly |
